@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Paper from '@mui/material/Paper';
+import Button from '@mui/material/Button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-component">
+      <Paper elevation={3}>App component</Paper>
+      <Button variant="text">Text</Button>
+      <Button variant="contained">Contained</Button>
+      <Button variant="outlined">Outlined</Button>
+
+      <br></br>
+      <br></br>
+      <button type="button" class="btn btn-primary">
+        Primary
+      </button>
+      <button type="button" class="btn btn-secondary">
+        Secondary
+      </button>
+      <button type="button" class="btn btn-success">
+        Success
+      </button>
+      <button type="button" class="btn btn-danger">
+        Danger
+      </button>
+      <button type="button" class="btn btn-warning">
+        Warning
+      </button>
+      <button type="button" class="btn btn-info">
+        Info
+      </button>
+      <button type="button" class="btn btn-light">
+        Light
+      </button>
+      <button type="button" class="btn btn-dark">
+        Dark
+      </button>
     </div>
   );
 }
